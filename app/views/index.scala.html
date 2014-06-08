@@ -1,0 +1,12 @@
+
+@(message: String)(listItem: List[String])
+
+@main("Welcome") {
+
+    <h1>@message</h1>
+    <ul>
+    	@for(item <- listItem) {
+    		<li>@item</li>
+    	}
+    </ul>
+}
