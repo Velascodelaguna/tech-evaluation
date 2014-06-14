@@ -1,106 +1,106 @@
 html, body
 {
-font-family:Calibri, Cambria, sans-serif;
-display:table;
-width:100%;
-height:100%;
-background-color:#D8BFE8;
+	font-family:Calibri, Cambria, sans-serif;
+	display:table;
+	width:100%;
+	height:100%;
+	background-color:#D8BFE8;
 }
 
 body header
 {
-font-family:"Kunstler Script", "Edwardian Script ITC", serif;
-font-size: 6em;
-background-color:#D8BFE8;
-color:white;
-text-align:center;
+	font-family:"Kunstler Script", "Edwardian Script ITC", serif;
+	font-size: 6em;
+	background-color:#D8BFE8;
+	color:white;
+	text-align:center;
 }
 
 h1
 {
-text-align:center;
-background-color:#D8BFE8;
-color:white;
-margin:0;
-padding:0.5em;
-font-size:2.5em;
+	text-align:center;
+	background-color:#D8BFE8;
+	color:white;
+	margin:0;
+	padding:0.5em;
+	font-size:2.5em;
 }
 
 div.menu
 {
-float:left;
-display:block;
-background-color:#D8BFE8;
-padding:1em;
-padding-right:0;
-padding-left:2.3em;
-margin-right: 1em;
-height:100%;
-display:table-column;
+	float:left;
+	display:block;
+	background-color:#D8BFE8;
+	padding:1em;
+	padding-right:0;
+	padding-left:2.3em;
+	margin-right: 1em;
+	height:100%;
+	display:table-column;
 }
 
 div.menu > ul
 {
-display: block;
-list-style-type:none;
-margin:0;
-padding:0;
+	display: block;
+	list-style-type:none;
+	margin:0;
+	padding:0;
 }
 
 div.menu > ul > li
 {
-margin:0;
+	margin:0;
 }
 
 div.menu > ul > li a
 {
-display:block;
-padding-right:2em;
-background-color:#B382D2;
-border: 1px solid #D8BFE8;
-border-right: 1px solid #B382D2;
-text-decoration:none;
-font-size:1.2em;
-color:white;
+	display:block;
+	padding-right:2em;
+	background-color:#B382D2;
+	border: 1px solid #D8BFE8;
+	border-right: 1px solid #B382D2;
+	text-decoration:none;
+	font-size:1.2em;
+	color:white;
 }
 
 div.menu > ul > li a:link
 {
-color:white;
+	color:white;
 }
 
 
 div.menu > ul > li a:visited
 {
-color:#dddddd;
+	color:#dddddd;
 }
 
 div.menu > ul > li a:hover
 {
-color:#bbbbbb;
+	color:#bbbbbb;
 }
 
 div.menu > h2
 {
-padding:0;
-margin:0;
-color:white;
-font-size:2em;
+	padding:0;
+	margin:0;
+	color:white;
+	font-size:2em;
 }
 
 ul
 {
-list-style-type: none;
+	list-style-type: none;
 }
 
 div.content
 {
-background-color:white;
+	background-color:white;
 }
 
 
 footer
 {
-background-color:white;
-height:100%;
+	background-color:white;
+	height:100%;
 }
