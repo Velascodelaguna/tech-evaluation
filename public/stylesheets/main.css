@@ -1,6 +1,6 @@
 html, body
 {
-	font-family:Calibri, Cambria, sans-serif;
+	font-family: 'Open Sans', Calibri, Cambria, sans-serif;
 	display:table;
 	width:100%;
 	height:100%;
@@ -9,7 +9,7 @@ html, body
 
 body header
 {
-	font-family:"Kunstler Script", "Edwardian Script ITC", serif;
+	font-family:'Kunstler Script', 'Edwardian Script ITC', serif;
 	font-size: 6em;
 	background-color:#D8BFE8;
 	color:white;
