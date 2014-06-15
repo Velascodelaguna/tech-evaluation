@@ -46,18 +46,16 @@ public class Application extends Controller {
     		NodeList headings = (NodeList) xpath.evaluate(getHeadings, doc, XPathConstants.NODESET);
     		
     		for (int i = 0; i < headings.getLength(); i++) {
-    			headingList.add(headings.item(i).toString());
+    			headingList.add(headings.item(i).toString().trim());
     		}
 
     	} catch (SAXException | IOException | XPathExpressionException | ParserConfigurationException e) {
     		e.printStackTrace();
     	}
 
-    	headingList.add("PUT STUFF HERE");
-
-
     	return ok(presentationpage.render(headingList));
     }
+    
 
     // public static Result architecture() {
 
