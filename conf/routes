@@ -4,6 +4,11 @@
 
 # Home page
 GET     /                           controllers.Application.index()
+GET		/tech-eval/introduction		controllers.Application.index()
+#GET	/tech-eval/about			controllers.Application.aboutPlay()
+#GET	/tech-eval/architecture		controllers.Application.architecture()
+GET     /tech-eval/cons             controllers.Application.cons()
+
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
