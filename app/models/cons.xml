@@ -1,11 +1,16 @@
 <?xml version="1.0" standalone="yes" ?>
 <PlayContent>
-	<Title> Cons of using Play </Title>
-	<Heading> Complex with large ecosystem
+	<Title> Cons </Title>
+	<Heading name="Complex">  
 		<Info> Several built-in modules </Info> 
-		<Info> emphasises convention over configuration </Info>
+		<Info> Emphasises convention over configuration </Info>
+	</Heading name = "Backward incompatibility between versions"> </Heading>
+	<Heading name="Reliability on scala"> 
+		<Info> Uses LESS CSS and coffeescript  </Info>
+		<Info> Not used by traditional java applications </Info>
 	</Heading>
-	<Heading> Reliability on scala 
-		<Info> Limits code readibility for non Java users </Info>
+	<Heading name="Difficulty in launching activator">
+		<Info> Missing dependencies </Info>
+		<Info> Set paths manually </Info>
 	</Heading>
 </PlayContent>
