@@ -4,17 +4,63 @@ import play.mvc.*;
 import play.*;
 import views.html.*;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.*;
-import java.util.Collections;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathExpression;
+import javax.xml.xpath.XPathExpressionException;
+import javax.xml.xpath.XPathFactory;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
 
 public class Application extends Controller {
 
     public static Result index() {
     	List<String> names = Arrays.asList("James", "Rob", "Anastasia", "Maria", "Allan", "Ravneet", "Harpreet");
-    	String subtitle = "A demonstration of the Play framework.";
-    	String ulheader = "Group members:";
     	Collections.sort(names);
-        return ok(index.render("Welcome to the Website of Group 14!", subtitle, ulheader, names));
+        return ok(index.render("Welcome to the Website of Group 14!", names));
     }
+
+    public static Result cons()  {
+
+
+    	List<String> headingList = new ArrayList<>();    
+    	try {
+    		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+    		DocumentBuilder builder = factory.newDocumentBuilder();
+    		Document doc = builder.parse(new FileInputStream("cons.xml"));
+    		
+    		XPath xpath = XPathFactory.newInstance().newXPath();
+    		String getHeadings = "/PlayContent/Heading/Info";
+    		NodeList headings = (NodeList) xpath.evaluate(getHeadings, doc, XPathConstants.NODESET);
+    		
+    		for (int i = 0; i < headings.getLength(); i++) {
+    			headingList.add(headings.item(i).toString());
+    		}
+
+    	} catch (SAXException | IOException | XPathExpressionException | ParserConfigurationException e) {
+    		e.printStackTrace();
+    	}
+
+    	headingList.add("PUT STUFF HERE");
+
+
+    	return ok(presentationpage.render(headingList));
+    }
+
+    // public static Result architecture() {
+
+    // }
 
 }

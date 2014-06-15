@@ -1,11 +1,10 @@
 
-@(title: String)(subtitle: String)(ulheader: String)(listItem: List[String])
+@(title: String)(listItem: List[String])
 
 @main("Welcome") {
 
     <h1>@title</h1>
-    <h3>@subtitle</h3>
-    <ul><strong>@ulheader</strong>
+    <ul>
     	@for(item <- listItem) {
     		<li>@item</li>
     	}
