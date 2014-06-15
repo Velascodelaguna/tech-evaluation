@@ -4,17 +4,15 @@ import play.mvc.*;
 import play.*;
 import views.html.*;
 
-import java.io.FileInputStream;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.*;
 
-import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
-import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
@@ -37,12 +35,14 @@ public class Application extends Controller {
 
     	List<String> headingList = new ArrayList<>();    
     	try {
-    		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-    		DocumentBuilder builder = factory.newDocumentBuilder();
-    		Document doc = builder.parse(new FileInputStream("cons.xml"));
+    		
+    		Document doc = DocumentBuilderFactory
+    			       .newInstance()
+    		               .newDocumentBuilder()
+    		               .parse(new File("app/models/cons.xml"));
     		
     		XPath xpath = XPathFactory.newInstance().newXPath();
-    		String getHeadings = "/PlayContent/Heading/Info";
+    		String getHeadings = "/PlayContent/Heading/text()";
     		NodeList headings = (NodeList) xpath.evaluate(getHeadings, doc, XPathConstants.NODESET);
     		
     		for (int i = 0; i < headings.getLength(); i++) {
