@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="yes" ?>
+<PlayContent>
+<Title>  Pros </Title>
+	<Heading> Rapid Iteration
+		<Info> change the code, refresh the page and see the change instantly </Info> 
+	</Heading>
+	<Heading> Java and Scala
+		<Info> JVM performance </Info>
+		<Info> libraries </Info>
+		<Info> IDE/tooling support </Info>
+		<Info> huge community </Info>
+	</Heading>
+	<Heading> Reactive
+		<Info> non-blocking IO makes parallel data fetch easy and real-time web possible </Info> 
+	</Heading>
+	<Heading> Open
+		<Info> github repo </Info>
+		<Info> documentation </Info>
+		<Info> user group </Info>
+		<Info> open source plugins </Info>
+		<Info> StackOverflow </Info>
+	</Heading>
+	<Heading> Reactive
+		<Info> non-blocking IO makes parallel data fetch easy and real-time web possible </Info> 
+	</Heading>
+	<Heading> Supported
+		<Info> Typesafe and Zenexity provide commercial support for Play </Info> 
+	</Heading>
+	<Heading> Flexible
+		<Info> almost everthing is pluggable, configurable, and customizable </Info> 
+	</Heading>
+</PlayContent>
+		
+	
