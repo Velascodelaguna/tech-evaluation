@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes" ?>
+<PlayContent>
+	<Title>Features</Title>
+	<Heading>Scaffolding 
+		<Info>
+			Has automatic code generation that creates basic CRUD operations for a specific database with little or no code/work
+		</Info> 
+	</Heading>
+	<Heading>Jobs
+		<Info>
+			a way to run program logic in the background by way of ‘jobs’. It will take care of the timing and lifecycles
+		</Info> 
+	</Heading>	
+	<Heading>Templating
+		<Info>
+			Templating in a clean and intuitive way. Play uses the Groovy as an expression language, which is easy to pick if you are familiar with Java, and a tag system for reusable components.
+		</Info> 
+	</Heading>	
+	<Heading>Testing
+		<Info>
+			Testing is very important, as much as most developers ignore it. Play has a built-in interface for unit, functional and selenium testing for your web app. It can use Junit to test your Java code  
+		</Info> 
+	</Heading>	
+</PlayContent>
