@@ -1,26 +1,25 @@
 html, body
 {
-	font-family: 'Open Sans', Helvetica, Calibri, Arial, sans-serif;
-	display:table;
-	width:100%;
+	font-family: sans-serif;
+	background-color: #88c557;
 	height:100%;
-	background-color:#D8BFE8;
+	border:0.5em;
 }
 
 body header
 {
-	font-family:'Kunstler Script', 'Edwardian Script ITC', serif;
+	font-family: sans-serif;
 	font-size: 6em;
-	background-color:#D8BFE8;
-	color:white;
-	text-align:center;
+	background-color: white;
+	color: #88c557;
+	text-align: center;
 }
 
 h1
 {
 	text-align:center;
-	background-color:#D8BFE8;
-	color:white;
+	background-color: white;
+	color: #88c557;
 	margin:0;
 	padding:0.5em;
 	font-size:2.5em;
@@ -30,7 +29,7 @@ div.menu
 {
 	float:left;
 	display:block;
-	background-color:#D8BFE8;
+	background-color:#88c557;
 	padding:1em;
 	padding-right:0;
 	padding-left:2.3em;
@@ -56,9 +55,9 @@ div.menu > ul > li a
 {
 	display:block;
 	padding-right:2em;
-	background-color:#B382D2;
-	border: 1px solid #D8BFE8;
-	border-right: 1px solid #B382D2;
+	background-color:green;
+	border: 0.15em solid #88c557;
+	padding-left:0.5em;
 	text-decoration:none;
 	font-size:1.2em;
 	color:white;
@@ -72,7 +71,8 @@ div.menu > ul > li a:link
 
 div.menu > ul > li a:visited
 {
-	color:#dddddd;
+	color:black;
+	background-color: #88c557;
 }
 
 div.menu > ul > li a:hover
