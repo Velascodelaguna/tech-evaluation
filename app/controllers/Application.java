@@ -24,7 +24,7 @@ public class Application extends Controller {
     	List<String> headingList = new ArrayList<String>();
     	headingList.addAll(consContent.keySet());
     	
-    	return ok(presentationpage.render(headingList));
+    	return ok(presentationpage.render("Title goes here", consContent));
     }
     
 
