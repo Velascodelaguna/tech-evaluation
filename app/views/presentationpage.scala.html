@@ -1,37 +1,20 @@
 @(title: String)(content: Map[String, List[String]])
 
 @main("Welcome"){
-
-		<header>play!</header>
-		
-		<h1 id="title">@title</h1>
-		
-		<div class="menu">
-			<h2 id="menuTitle">Topics</h2>
-			
-			<ul id="menu">
-				<li><a href="techEval/index">Group 14</a></li>
-				<li><a href="about">What is Play?</a></li>
-				<li><a href="background">Background</a></li>
-				<li><a href="architecture">Play Architectures</a></li>
-				<li><a href="features">Features</a></li>
-				<li><a href="dir">Directory Structure</a></li>
-				<li><a href="pros">Advantages</a></li>
-				<li><a href="cons">Disadvantages</a></li>
-				<li><a href="qs">Questions</a></li>
-			</ul>
-		</div>
-
-		<div class="content">
-		    <ul>
-			@for((heading, infos) <- content) {
-			    <li class="heading">@heading</li>
-			      <ul>
-			      @for(i <- infos) {
-			          <li class="info">@i</li> 
-			      }
-			      </ul>
-			}
-			</ul>
-		</div>
+    <header>play!</header>
+    <h1 id="title">@title</h1>
+    
+    @navigation(title)
+	<div class="content">
+	    <ul>
+		@for((heading, infos) <- content) {
+		    <li class="heading">@heading</li>
+		      <ul>
+		      @for(i <- infos) {
+		          <li class="info">@i</li> 
+		      }
+		      </ul>
+		}
+		</ul>
+	</div>
 }

@@ -1,0 +1,11 @@
+@(names: List[String])
+
+@main("Welcome") {
+    
+    @navigation("Introduction")
+    <ul>
+    @for(name <- names) {
+        <li>@name</li>
+    }
+    </ul>
+}

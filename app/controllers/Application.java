@@ -14,7 +14,7 @@ public class Application extends Controller {
     public static Result index() {
     	List<String> names = Arrays.asList("James", "Rob", "Anastasia", "Maria", "Allan", "Ravneet", "Harpreet");
     	Collections.sort(names);
-        return ok(index.render("Welcome to the Website of Group 14!", names));
+        return ok( intro.render(names) );
     }
 
     public static Result cons()  {
@@ -31,6 +31,26 @@ public class Application extends Controller {
         return ok( presentationpage.render("Advantages of Play", consContent) );
     }    
     
+    public static Result features()  {
+        final String filePath = "app/models/features.xml";
+        Map<String, List<String>> consContent = GetPresentationContent.getContent(filePath);
+                
+        return ok( presentationpage.render("Features of Play", consContent) );
+    } 
+    
+    public static Result about()  {
+        final String filePath = "app/models/whatisplay.xml";
+        Map<String, List<String>> consContent = GetPresentationContent.getContent(filePath);
+                
+        return ok( presentationpage.render("What is Play?", consContent) );
+    } 
+    
+    public static Result background()  {
+        final String filePath = "app/models/background.xml";
+        Map<String, List<String>> consContent = GetPresentationContent.getContent(filePath);
+                
+        return ok( presentationpage.render("Background Information", consContent) );
+    } 
 
     // public static Result architecture() {
 
