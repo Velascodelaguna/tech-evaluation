@@ -18,10 +18,12 @@ public class Application extends Controller {
     }
 
     public static Result cons()  {
-	final String filePath = "app/models/cons.xml";
-	final String xpathHeadings = "/PlayContent/Heading/text()";
-	List<String> headingList = GetPresentationContent.getHeadings(xpathHeadings, filePath);
-	
+    	final String filePath = "app/models/cons.xml";
+    	Map<String, List<String>> consContent = GetPresentationContent.getContent(filePath);
+    	
+    	List<String> headingList = new ArrayList<String>();
+    	headingList.addAll(consContent.keySet());
+    	
     	return ok(presentationpage.render(headingList));
     }
     
