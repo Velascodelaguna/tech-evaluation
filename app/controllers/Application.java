@@ -20,12 +20,16 @@ public class Application extends Controller {
     public static Result cons()  {
     	final String filePath = "app/models/cons.xml";
     	Map<String, List<String>> consContent = GetPresentationContent.getContent(filePath);
-    	
-    	List<String> headingList = new ArrayList<String>();
-    	headingList.addAll(consContent.keySet());
-    	
-    	return ok( presentationpage.render("Title goes here", consContent) );
+    	    	
+    	return ok( presentationpage.render("Disadvantages of Play", consContent) );
     }
+    
+    public static Result pros()  {
+        final String filePath = "app/models/pros.xml";
+        Map<String, List<String>> consContent = GetPresentationContent.getContent(filePath);
+                
+        return ok( presentationpage.render("Advantages of Play", consContent) );
+    }    
     
 
     // public static Result architecture() {

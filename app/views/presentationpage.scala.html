@@ -25,11 +25,10 @@
 		<div class="content">
 		    <ul>
 			@for((heading, infos) <- content) {
-			    
-			    <li>@heading</li>
+			    <li class="heading">@heading</li>
 			      <ul>
 			      @for(i <- infos) {
-			          <li>@i</li> 
+			          <li class="info">@i</li> 
 			      }
 			      </ul>
 			}
