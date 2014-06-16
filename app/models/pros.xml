@@ -2,8 +2,8 @@
 <PlayContent>
 <Title>Pros</Title>
 	<Heading name="Developer Friendly">
-	<Info> Open Source <Info>
-	<Info> Rapid iteration Support <Info>
+	<Info> Open Source </Info>
+	<Info> Rapid iteration Support </Info>
 	<Info> IDE and tooling support for Java and IntelliJ IDEA </Info> 
 	<Info> Reactive: non-blocking IO and real-time web </Info>
 	<Info> User friendly Documentation </Info>
