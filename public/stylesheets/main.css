@@ -43,7 +43,7 @@ div.menu
 div.menu > ul
 {
 	display: block;
-	list-style-type:none;
+	list-style-image: url("../images/favicon.png");
 	margin:0;
 	padding:0;
 }
@@ -107,6 +107,11 @@ div.content
 {
 	color: black;
 	background-color: white;
+}
+
+div.content li
+{
+	margin: 1em 0;
 }
 
 footer

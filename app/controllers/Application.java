@@ -19,41 +19,79 @@ public class Application extends Controller {
 
     public static Result cons()  {
     	final String filePath = "app/models/cons.xml";
-    	Map<String, List<String>> consContent = GetPresentationContent.getContent(filePath);
+    	Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
     	    	
-    	return ok( presentationpage.render("Disadvantages of Play", consContent) );
+    	return ok( presentationpage.render("Disadvantages of Play", content) );
     }
     
     public static Result pros()  {
         final String filePath = "app/models/pros.xml";
-        Map<String, List<String>> consContent = GetPresentationContent.getContent(filePath);
+        Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
                 
-        return ok( presentationpage.render("Advantages of Play", consContent) );
+        return ok( presentationpage.render("Advantages of Play", content) );
     }    
     
     public static Result features()  {
         final String filePath = "app/models/features.xml";
-        Map<String, List<String>> consContent = GetPresentationContent.getContent(filePath);
+        Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
                 
-        return ok( presentationpage.render("Features of Play", consContent) );
+        return ok( presentationpage.render("Features of Play", content) );
     } 
     
     public static Result about()  {
         final String filePath = "app/models/whatisplay.xml";
-        Map<String, List<String>> consContent = GetPresentationContent.getContent(filePath);
+        Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
                 
-        return ok( presentationpage.render("What is Play?", consContent) );
+        return ok( presentationpage.render("What is Play?", content) );
     } 
     
     public static Result background()  {
         final String filePath = "app/models/background.xml";
-        Map<String, List<String>> consContent = GetPresentationContent.getContent(filePath);
+        Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
                 
-        return ok( presentationpage.render("Background Information", consContent) );
+        return ok( presentationpage.render("Background Information", content) );
     } 
 
-    // public static Result architecture() {
-
-    // }
+    public static Result architecture() {
+        final String filePath = "app/models/architecture.xml";
+        Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
+        
+        return ok( presentationpage.render("Architecture of Play", content) );
+    }
+    
+    public static Result actions() {
+        final String filePath = "app/models/architecture.xml";
+        Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
+        
+        return ok( presentationpage.render("Architecture of Play", content) );
+    }
+    
+    public static Result views() {
+        final String filePath = "app/models/architecture.xml";
+        Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
+        
+        return ok( presentationpage.render("Architecture of Play", content) );
+    }
+    
+    public static Result routes() {
+        final String filePath = "app/models/architecture.xml";
+        Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
+        
+        return ok( presentationpage.render("Architecture of Play", content) );
+    }
+    
+    public static Result dir() {
+        final String filePath = "app/models/architecture.xml";
+        Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
+        
+        return ok( presentationpage.render("Architecture of Play", content) );
+    }
+    
+    public static Result questions() {
+        final String filePath = "app/models/architecture.xml";
+        Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
+        
+        return ok( presentationpage.render("Architecture of Play", content) );
+    }
 
 }
