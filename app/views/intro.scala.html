@@ -1,8 +1,11 @@
 @(names: List[String])
 
 @main("Welcome") {
+    <header>play!</header>
+    <h1 id="title">Group 14</h1>
     
-    @navigation("Introduction")
+    @navigation()
+    
     <ul>
     @for(name <- names) {
         <li>@name</li>
