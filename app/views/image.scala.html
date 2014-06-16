@@ -1,0 +1,19 @@
+(@title: String)(@textImageMap: Map[String, List[String]])
+
+@main("Welcome"){
+    <header>play!</header>
+    <h1 id="title">@title</h1>
+    
+    @navigation()
+    
+	<div class="content">
+	    @for((url, texts) <- textImageMap) {
+	    	<image url=@url alt="Image Not Found"/>
+	    	<ul>
+	    	for (text <- texts) {
+	    		<li>@text</li>
+	    	}
+	    	</ul>
+		}
+	</div>
+}
