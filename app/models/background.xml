@@ -4,9 +4,16 @@
 	<Title>Background to Play</Title>
 
 	<Heading name="Summary">
-		<Info>Built on Akka and backed by TypeSafe.</Info>
+		<Info>Built on Akka and backed/developed/supported by TypeSafe.</Info>
 		<Info>Used by a number of prominent websites.</Info>
 		<Info>Open source software with Apache license!</Info>
+	</Heading>
+	
+	<Heading name="What is Apache license?">
+		<Info>Free software license!</Info>
+		<Info>Software or code made with this license can be used, distributed, and/or modified without need for royalties.</Info>
+		<Info>Copyright notice, disclaimer from damages must be kept on works made with the license.</Info>
+		<Info>Used most prominently in Android base operating system.</Info>
 	</Heading>
 
 	<Heading name="What is Akka?">
