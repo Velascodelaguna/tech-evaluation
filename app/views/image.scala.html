@@ -1,4 +1,4 @@
-(@title: String)(@textImageMap: Map[String, List[String]])
+@(title: String)(textImageMap: Map[String, List[String]])
 
 @main("Welcome"){
     <header>play!</header>
@@ -10,7 +10,7 @@
 	    @for((url, texts) <- textImageMap) {
 	    	<image url=@url alt="Image Not Found"/>
 	    	<ul>
-	    	for (text <- texts) {
+	    	@for(text <- texts) {
 	    		<li>@text</li>
 	    	}
 	    	</ul>
