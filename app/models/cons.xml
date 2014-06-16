@@ -2,9 +2,15 @@
 <PlayContent>
 	<Title> Cons </Title>
 	<Heading name="Complex">  
-		<Info> Several built-in modules </Info> 
-		<Info> Emphasises convention over configuration </Info>
-	</Heading name = "Backward incompatibility between versions"> </Heading>
+		<Info> Several built-in modules : Netty, Akka, Scala, SBT etc.  </Info> 
+	</Heading>
+	<Heading name="Immature">
+		<Info> Not all bugs have been flushed out </Info>
+		<Info> API is changing </Info>
+	</Heading>
+	<Heading name="Backward incompatibility between versions"> 
+		<Info> Play2.x has different features than Play1.x </Info>
+	</Heading>
 	<Heading name="Reliability on scala"> 
 		<Info> Uses LESS CSS and coffeescript  </Info>
 		<Info> Not used by traditional java applications </Info>

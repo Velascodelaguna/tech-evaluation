@@ -1,51 +1,27 @@
 <?xml version="1.0" standalone="yes" ?>
 <PlayContent>
-
-	<Title>Background to Play</Title>
-
-	<Heading name="Summary">
-		<Info>Built on Akka and backed/developed/supported by TypeSafe.</Info>
-		<Info>Used by a number of prominent websites.</Info>
-		<Info>Open source software with Apache license!</Info>
+<Title>Background of Play</Title>
+	<Heading name="What is Akka?">
+		<Info>A concurrency/distribution framework for Java/Scala.</Info>
+		<Info>Abstracts and simplifies handling of low-level OS details like threads, locks, and IO operations.</Info>
+		<Info>Created by TypeSafe.</Info>
 	</Heading>
-	
+	<Heading name="Who is TypeSafe?">
+		<Info>Company was founded by creator of Scala to support the language.</Info>
+		<Info>Mission: make apps more "reactive".</Info>
+		<Info>Supports the open source community!</Info>
+	</Heading>
 	<Heading name="What is Apache license?">
 		<Info>Free software license!</Info>
 		<Info>Software or code made with this license can be used, distributed, and/or modified without need for royalties.</Info>
 		<Info>Copyright notice, disclaimer from damages must be kept on works made with the license.</Info>
 		<Info>Used most prominently in Android base operating system.</Info>
 	</Heading>
-
-	<Heading name="What is Akka?">
-		<Info>A concurrency/distribution framework for Java/Scala.</Info>
-		<Info>Abstracts and simplifies handling of low-level OS details like threads, locks, and IO operations.</Info>
-		<Info>Created by TypeSafe.</Info>
-	</Heading>
-
-	<Heading name="Who is TypeSafe?">
-		<Info>Company was founded by creator of Scala to support the language.</Info>
-		<Info>Mission: make apps more "reactive".</Info>
-		<Info>Supports the open source community!</Info>
-	</Heading>
-
 	<Heading name="As an aside, reactive apps embody four ideals:">
-		<Info>Event-driven.</Info>
-		<Info>Scalable.</Info>
-		<Info>Resilient.</Info>
-		<Info>Responsive.</Info>
+		<Info>Event-driven</Info>
+		<Info>Scalable</Info>
+		<Info>Resilient</Info>
+		<Info>Responsive</Info>
 	</Heading>
-
-	<Heading name="Used By:">
-		<Info>TheGuardian, a popular daily newspaper in the UK.</Info>
-		<Info>LinkedIn, a popular professional-oriented social network.</Info>
-	</Heading>
-
-	<Heading name="References:">
-		<Info>http://en.wikipedia.org/wiki/Apache_License</Info>
-		<Info>http://akka.io/</Info>
-		<Info>http://www.playframework.com/</Info>
-		<Info>https://typesafe.com/</Info>
-		<Info>http://en.wikipedia.org/wiki/Scala_%28programming_language%29</Info>
-	</Heading>
-
 </PlayContent>
+

@@ -2,7 +2,8 @@
 <PlayContent>
 <Title> What is Play? </Title>
 	<Heading name="About Play">
-		<Info> Open source web application framework written in Java and Scala </Info>
+		<Info> Open source web application framework with Apache License </Info>
+		<Info> Written in Java and Scala and built on Akka </Info>
 		<Info> Relatively new : created in 2007 </Info>
 		<Info> Uses convention over configuration </Info>
 	</Heading>
@@ -10,7 +11,7 @@
 		<Info> Uses MVC(Model View Controller) pattern </Info>
 		<Info> Uses SBT(Simple Build Tool) for build and deployment </Info>
 		<Info> Uses Scala for templates </Info>
-		<Info> Backed by typesafe : company that focuses on making apps reactive </Info>
+		<Info> Backed by typesafe and built on Akka </Info>
 	</Heading>
 	<Heading name="Usage">
 		<Info> Renowned companies that use Play : Linkedin and TheGuardian </Info>
