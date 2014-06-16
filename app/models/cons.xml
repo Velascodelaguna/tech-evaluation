@@ -4,7 +4,9 @@
 	<Heading name="Complex">  
 		<Info> Several built-in modules </Info> 
 		<Info> Emphasises convention over configuration </Info>
-	</Heading name = "Backward incompatibility between versions"> </Heading>
+	</Heading>
+	<Heading name="Backward incompatibility between versions"> 
+	</Heading>
 	<Heading name="Reliability on scala"> 
 		<Info> Uses LESS CSS and coffeescript  </Info>
 		<Info> Not used by traditional java applications </Info>
