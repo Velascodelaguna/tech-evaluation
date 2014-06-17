@@ -4,6 +4,8 @@
     <header>play!</header>
     <h1 id="title">@title</h1>
     
+    @navigation()
+    
 	<div class="content">
 	    @for((url, texts) <- textImageMap) {
 	    	<img src="@routes.Assets.at("images/favicon.png")">
