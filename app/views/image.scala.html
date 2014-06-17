@@ -8,7 +8,7 @@
     
 	<div class="content">
 	    @for((url, texts) <- textImageMap) {
-	    	<img src="@routes.Assets.at("images/favicon.png")">
+	    	<img src="@routes.Assets.at("images/favicon.png")" />
 	    	<ul>
 	    	@for(text <- texts) {
 	    		<li>@text</li>
