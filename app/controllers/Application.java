@@ -81,7 +81,7 @@ public class Application extends Controller {
     }
     
     public static Result dir() {
-        final String filePath = "app/models/architecture.xml";
+        final String filePath = "app/models/directory.xml";
         Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
         
         return ok( image.render("Anatomy of Play", content) );
