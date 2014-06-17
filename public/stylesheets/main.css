@@ -9,7 +9,7 @@ body header
 	font-family: helvetica;
 	font-size: 4em;
 	background-color: white;
-	color: green;
+	color: #5ab1a7;
 	text-align: center;
 	font-style:italic;
 	padding-top: 0.2em;
@@ -30,13 +30,13 @@ h1
 div.menu
 {
 	position: absolute;
-	top: 7em;
+	top: 8em;
 	float:left;
 	display:block;
 	background-color:#88c557;
 	padding:1em;
 	padding-right:0;
-	padding-left:2.3em;
+	padding-left:2em;
 	margin-right: 1em;
 	height:100%;
 	display:table-column;
@@ -68,6 +68,7 @@ div.menu > ul > li a
 	font-size:1.2em;
 	color:white;
 	margin-bottom: 2px;
+	margin-left: -1em;
 }
 
 div.menu > ul > li a:link
