@@ -4,9 +4,13 @@
     <header>play!</header>
     <h1 id="title">Group 14</h1>
     
-    <ul>
-    @for(name <- names) {
-        <li>@name</li>
-    }
-    </ul>
+    @navigation()
+    
+    <div class="content">
+    	<ul>
+    	@for(name <- names) {
+        	<li>@name</li>
+   		}
+    	</ul>
+    </div>
 }

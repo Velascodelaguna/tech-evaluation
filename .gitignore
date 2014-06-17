@@ -35,5 +35,3 @@ dist
 .metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml
 .metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml
 .metadata/version.ini
-app/models/architecture.xml
-app/views/image.scala.html

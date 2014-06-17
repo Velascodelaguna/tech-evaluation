@@ -51,40 +51,47 @@ public class Application extends Controller {
                 
         return ok( presentationpage.render("Background Information", content) );
     } 
-    
-    public static Result architecture()  {
+
+    public static Result architecture() {
         final String filePath = "app/models/architecture.xml";
         Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
-                
-        return ok( image.render("Architecture", content) );
+        
+        return ok( presentationpage.render("Architecture of Play", content) );
     }
     
-    public static Result views()  {
+    public static Result actions() {
         final String filePath = "app/models/architecture.xml";
         Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
-                
-        return ok( image.render("Background Information", content) );
+        
+        return ok( presentationpage.render("Architecture of Play", content) );
     }
     
-    public static Result dir()  {
+    public static Result views() {
         final String filePath = "app/models/architecture.xml";
         Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
-                
-        return ok( image.render("Background Information", content) );
+        
+        return ok( presentationpage.render("Architecture of Play", content) );
     }
     
-    public static Result actions()  {
+    public static Result routes() {
         final String filePath = "app/models/architecture.xml";
         Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
-                
-        return ok( image.render("Background Information", content) );
+        
+        return ok( presentationpage.render("Architecture of Play", content) );
     }
     
-    public static Result routes()  {
+    public static Result dir() {
         final String filePath = "app/models/architecture.xml";
         Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
-                
-        return ok( image.render("Background Information", content) );
+        
+        return ok( presentationpage.render("Architecture of Play", content) );
+    }
+    
+    public static Result questions() {
+        final String filePath = "app/models/architecture.xml";
+        Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
+        
+        return ok( presentationpage.render("Architecture of Play", content) );
     }
 
 }
