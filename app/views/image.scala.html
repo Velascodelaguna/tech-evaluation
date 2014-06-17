@@ -5,7 +5,7 @@
     
 	<div class="content">
 	    @for((url, texts) <- textImageMap) {
-	    	<img src="@routes.Assets.at(url)" />
+	    	<img class="content" src="@routes.Assets.at(url)" />
 	    	<ul>
 	    	@for(text <- texts) {
 	    		<li>@text</li>

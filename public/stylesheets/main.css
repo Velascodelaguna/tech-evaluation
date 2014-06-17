@@ -4,6 +4,8 @@ html, body
 	background-color: #88c557;
 }
 
+
+
 body header
 {
 	font-family: helvetica;
@@ -12,7 +14,7 @@ body header
 	color: #5ab1a7;
 	text-align: center;
 	font-style:italic;
-	padding-top: 0.2em;
+	padding-top: 0.1em;
 }
 
 h1
@@ -21,7 +23,7 @@ h1
 	background-color:  #88c557;
 	color: green;
 	margin:0;
-	padding:0.5em;
+	padding:0.36em;
 	font-size:2.5em;
 }
 
@@ -30,7 +32,7 @@ h1
 div.menu
 {
 	position: absolute;
-	top: 8em;
+	top: 9.3em;
 	float:left;
 	display:block;
 	background-color:#88c557;
@@ -109,6 +111,7 @@ div.content
 	color: black;
 	background-color: white /*#88c557*/;
 	margin-left: 16em;
+	margin-top: 1em;
 	line-height: 1.8em;
 }
 
