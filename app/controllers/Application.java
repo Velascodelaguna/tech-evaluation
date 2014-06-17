@@ -56,7 +56,7 @@ public class Application extends Controller {
         final String filePath = "app/models/architecture.xml";
         Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
         
-        return ok( presentationpage.render("Architecture of Play", content) );
+        return ok( image.render("Architecture of Play", content) );
     }
     
     public static Result actions() {
