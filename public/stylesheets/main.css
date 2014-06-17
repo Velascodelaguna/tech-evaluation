@@ -12,13 +12,14 @@ body header
 	color: green;
 	text-align: center;
 	font-style:italic;
-	padding-top: 0.3em;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
 }
 
 h1
 {
 	text-align:center;
-	background-color: white;
+	background-color:  #88c557;
 	color: green;
 	margin:0;
 	padding:0.5em;
@@ -29,6 +30,8 @@ h1
 
 div.menu
 {
+	position: absolute;
+	top: 7em;
 	float:left;
 	display:block;
 	background-color:#88c557;
@@ -104,7 +107,7 @@ ul#menu li.current
 div.content
 {
 	color: black;
-	background-color: #88c557;
+	background-color: white /*#88c557*/;
 	margin-left: 16em;
 	line-height: 1.8em;
 }
