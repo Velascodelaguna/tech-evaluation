@@ -56,6 +56,8 @@ div.menu > ul > li
 div.menu > ul > li a
 {
 	display:block;
+	padding-top: 3px;
+	padding-bottom: 3px;
 	padding-right:2em;
 	background-color:green;
 	border: 0.15em solid #88c557;
@@ -63,28 +65,24 @@ div.menu > ul > li a
 	text-decoration:none;
 	font-size:1.2em;
 	color:white;
+	margin-bottom: 2px;
 }
 
 div.menu > ul > li a:link
 {
 	color:white;
-}
 
-
-div.menu > ul > li a:visited
-{
-	color:white;
-	background-color: #88c557;
 }
 
 div.menu > ul > li a:hover
 {
-	color:black;
+	background-color: #5ab1a7;
 }
 
 div.menu > h2
 {
 	padding:0;
+	padding-bottom: 8px;
 	margin:0;
 	color:white;
 	text-align: left;
@@ -106,7 +104,9 @@ ul#menu li.current
 div.content
 {
 	color: black;
-	background-color: white;
+	background-color: #88c557;
+	margin-left: 16em;
+	line-height: 1.8em;
 }
 
 footer
