@@ -1,18 +1,18 @@
 <?xml version="1.0" standalone="yes" ?>
 <PlayContent>
 	<Title>Example of Actions</Title>
-	<Heading name="Controllers handle incoming requests" />
-		<Info> Classes that extend play.mvc.controllers can define actions<Info/>
+	<Heading name="Controllers handle incoming requests">
+		<Info> Classes that extend play.mvc.controllers can define actions</Info>
 		<Info> Routes define which Actions are called from the URL </Info>
 	</Heading>
 
-	<Heading name="Actions are just static methods in Java" />
+	<Heading name="Actions are just static methods in Java">
 		<Info> Static methods are used so that server remains stateless</Info>
 		<Info> Actions handle requests that come in the server</Info>
 		
 	</Heading>
 
-	<Heading name="Actions return Results"/>
+	<Heading name="Actions return Results">
 		<Info> A return type is called Results which are returned to the client</Info>
 		<Info> A method call to ok returns an HTTP response of status 200</Info>
 	</Heading>
