@@ -8,13 +8,10 @@ html, body
 
 body header
 {
-	font-family: helvetica;
-	font-size: 4em;
 	background-color: white;
-	color: #5ab1a7;
 	text-align: center;
-	font-style:italic;
-	padding-top: 0.1em;
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
 }
 
 h1
