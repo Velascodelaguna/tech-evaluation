@@ -164,6 +164,16 @@ div.content li.heading
 	padding: 0.5em;
 }
 
+div.content > img.routes
+{
+	margin-left: 5em;
+}
+
+div.content > img.question
+{
+	margin-left: 12em;
+	margin-top: 3em;
+}
 footer
 {
 	background-color:white;

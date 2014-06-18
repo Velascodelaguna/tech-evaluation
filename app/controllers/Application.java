@@ -63,7 +63,7 @@ public class Application extends Controller {
     public static Result routes() {
         final String filePath = "app/models/routes.xml";
         Tuple<String, Map<String, List<String>>> content = GetPresentationContent.getContent(filePath);
-        return  ok( routespage.render() ) ;
+        return  ok( routespage.render(content) ) ;
     }
     
     public static Result dir() {
@@ -72,8 +72,7 @@ public class Application extends Controller {
     }
 
     public static Result questions() {
-        final String filePath = "app/models/architecture.xml"; // Need to change this
-        return showPresentation(filePath);
+        return ok ( questions.render() );
     }
     
     private static Result showPresentation(final String filePath) {
