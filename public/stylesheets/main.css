@@ -4,8 +4,6 @@ html, body
 	background-color: #88c557;
 }
 
-
-
 body header
 {
 	font-family: helvetica;
@@ -21,67 +19,70 @@ h1
 {
 	text-align:center;
 	background-color:  #88c557;
-	color: green;
+	color: #154F38;
 	margin:0;
 	padding-top: 0.5em;
 	padding-bottom: 0.2em;
 	font-size:2.5em;
 }
 
+h2#menuTitle
+{
+	color: #26370A;
+}
+
 
 
 div.menu
 {
+	width: 180px; /*width of menu*/
+	border-style: solid solid none solid;
+	border-color: #88c557;
+	border-size: 1px;
+	border-width: 1px;
 	position: absolute;
 	top: 9.6em;
 	float:left;
-	display:block;
 	padding:1em;
 	padding-right:0;
 	padding-left:2em;
 	margin-right: 1em;
-	height:100%;
-	display:table-column;
 }
 
 div.menu > ul
 {
-	display: block;
-	list-style-type:none;
-	margin:0;
-	padding:0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
-div.menu > ul > li
-{
-	margin:0;
-}
 
 div.menu > ul > li a
 {
-	display:block;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	padding-right:2em;
-	background-color:#5ab1a7;
-	border: 0.15em solid #88c557;
-	padding-left:0.7em;
-	text-decoration:none;
-	font-size:1.2em;
-	color:white;
-	margin-bottom: 2px;
-	margin-left: -1em;
+	font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+	display: block;
+	background: transparent url('../images/arrowgreen.gif') 100% 0;
+	height: 24px; /*Set to height of bg image- padding within link (ie: 32px - 4px - 4px)*/
+	padding: 4px 0 4px 10px;
+	line-height: 24px; /*Set line-height of bg image- padding within link (ie: 32px - 4px - 4px)*/
+	text-decoration: none;
 }
 
-div.menu > ul > li a:link
+div.menu > ul > li a:link, div.menu > ul > li a:visited
 {
-	color:white;
-
+	color: #5E7830;
 }
 
 div.menu > ul > li a:hover
 {
-	background-color: #5ab1a7;
+	color: #26370A;
+	background-position: 100% -32px;
+}
+
+div.menu > ul > li a:selected
+{
+	color: #26370A;
+	background-position: 100% -64px;
 }
 
 div.menu > h2
@@ -111,10 +112,31 @@ ul#menu li.current
 div.content
 {
 	color: black;
-	background-color: white /*#88c557*/;
+	background-color: #E1F7E4 /*#88c557*/;
 	margin-left: 16em;
 	margin-top: 1em;
 	line-height: 1.8em;
+}
+
+div.content li
+{
+	color: #26370A;
+}
+
+div.content li.info
+{
+	color: #26370A;
+	background-image: url('../images/favicon.png');
+	padding-left: 20px;
+	background-repeat: no-repeat;
+	background-position: 0 .5em;
+}
+
+div.content li.heading
+{
+	color: #26370A;
+	font-style: bold;
+	font-size: 1.4em;
 }
 
 footer
