@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="yes" ?>
 <PlayContent>
-<Title>Background of Play</Title>
+<Title>Background</Title>
 	<Heading name="What is Akka?">
 		<Info>A concurrency/distribution framework for Java/Scala.</Info>
 		<Info>Abstracts and simplifies handling of low-level OS details like threads, locks, and IO operations.</Info>
