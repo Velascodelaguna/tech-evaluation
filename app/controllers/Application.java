@@ -33,6 +33,11 @@ public class Application extends Controller {
         return showPresentation(filePath);
     } 
     
+    public static Result activator()  {
+        final String filePath = "app/models/activator.xml";
+        return showPresentation(filePath);
+    } 
+
     public static Result about()  {
         final String filePath = "app/models/whatisplay.xml";
         return showPresentation(filePath);
@@ -68,7 +73,8 @@ public class Application extends Controller {
     
     public static Result dir() {
         final String filePath = "app/models/directory.xml";
-        return showImagePresentation(filePath);
+        Tuple<String, Map<String, List<String>>> content = GetPresentationContent.getContent(filePath);
+        return ok( directorypage.render(content) ) ;
     }
 
     public static Result questions() {

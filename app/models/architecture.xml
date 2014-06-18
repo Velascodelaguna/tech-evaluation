@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="yes" ?>
 <PlayContent>
-<Title>Architecture of Play</Title>
+<Title>Archticture of Play</Title>
 	<Heading name="images/architecture.png">
 		<Info> Figure 1: This depicts the architecture structure of the Play! Framework </Info>
 	</Heading>

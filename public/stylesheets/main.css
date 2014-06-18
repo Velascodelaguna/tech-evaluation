@@ -156,6 +156,15 @@ div.content li.info
 	background-position: 0 .5em;
 }
 
+div.content li.picinfo
+{
+	color: #26370A;
+	background-image: url('../images/favicon.png');
+	padding-left: 20px;
+	background-repeat: no-repeat;
+	background-position: 0 .5em;
+}
+
 div.content li.heading
 {
 	color: #26370A;
@@ -165,6 +174,11 @@ div.content li.heading
 }
 
 div.content > img.routes
+{
+	margin-left: 5em;
+}
+
+div.content > img.directory
 {
 	margin-left: 5em;
 }

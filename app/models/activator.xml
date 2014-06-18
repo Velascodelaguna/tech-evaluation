@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes" ?>
+<PlayContent>
+<Title>Activator</Title>
+	<Heading name="About Activator">
+		<Info>Typesafe Reactive Platform's build and tutorial tool</Info>
+		<Info>Activator supports each stage of the application development life cycle</Info>
+	<Heading name="Activator Commands">
+		<Info>activator new</Info>
+		<Info>activator run</Info>
+		<Info>activator</Info>
+		<Info>activator ui</Info>
+
+	</Heading>
+</PlayContent>
