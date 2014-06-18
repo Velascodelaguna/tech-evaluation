@@ -1,32 +1,39 @@
 <?xml version="1.0" standalone="yes" ?>
 <PlayContent>
-<Title>Pros</Title>
-	<Heading name="Allows for rapid iteration">
-		<Info>Refresh the page and see changes without redeploying</Info> 
+<Title>Advantages</Title>
+
+	<Heading name="Open Source">
+		<Info>The original code for Play is freely available and can be modified</Info>
 	</Heading>
-	<Heading name="Implemented in Java and Scala">
-		<Info>Java performs well in the JVM</Info>
-		<Info>Java is a mature language with flushed out libraries</Info>
-		<Info>Java has IDE and tool support </Info>
-		<Info>Large active community</Info>		
-		<Info>Concurrency is easy: Minimize side effects, immutable and persistent data structures, Avoids mutable state, First class functions</Info>
+
+	<Heading name="Rapid iteration Support">
+		<Info>Make changes</Info> 
+		<Info>Refresh the page</Info> 
+		<Info>See your changes instantly</Info> 
 	</Heading>
-	<Heading name="Free and open source">
-		<Info>Play Framework is available on Github (https://github.com/playframework/playframework)</Info>
-		<Info>Lots of documentation: Tutorials, Play APIs, </Info> <!-- What is your goal here? It's free so it has good documentation? -->
-		<Info> user group </Info><!-- What do you mean? -->
-		<Info> Open source plugins/modules that extend Play's functionality for Security, Databases, Front-end development </Info>
-		<Info> StackOverflow </Info>
+
+	<Heading name="IDE and tooling support for Java and IntelliJ IDEA">
+		<Info>Compiles Java and Scala source directly</Info>
+		<Info>Uses JVM</Info> 
 	</Heading>
-	<Heading name="Reactive paradigm">
-		<Info> non-blocking IO makes parallel data fetch easy and real-time web possible </Info> 
+
+	<Heading name="Reactive">
+		<Info>Paradigm used to create interactive and dynamic web applications</Info> 
+		<Info>Play supports Non blocking IO and real-time web</Info>
 	</Heading>
-	<Heading name="Well supported">
-		<Info> Typesafe and Zenexity provide commercial support for Play </Info> 
+	<Heading name="Non blocking IO">
+		<Info>Nothing on the server is ever blocked</Info>
+		<Info>If the result depends on an extensive computation then only the requesting client will be blocked while waiting for the response</Info>
+		<Info>Server will return the promise of result</Info>
+		<Info>Play will serve this result as soon as the promise is redeemed</Info>
 	</Heading>
-	<Heading name="Flexible">
-		<Info> almost everthing is pluggable, configurable, and customizable </Info> 
+	<Heading name="Real-time web">
+		<Info>Uses websockets instead of Comet sockets</Info>
+		<Info>Useful for web applications that require bi-directional communication</Info>
+    </Heading>
+	<Heading name="User Friendly Documentation">
+		<Info>Easy to read and understand for beginners</Info> 
 	</Heading>
+
 </PlayContent>
 		
-	

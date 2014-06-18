@@ -8,14 +8,22 @@
 	    <ul>
         @for((heading, infos) <- content._2) {
             <li class="heading">@heading</li>
-              <ul>
-              @for(i <- infos) {
-                  <li class="info">@i</li> 
-              }
-              </ul>
+			<ul>
+			@for(i <- infos) {
+				<li class="info">@i</li> 
+            }
+            </ul>
         }
+        <br />
+        <ul><img class="routes" src="@controllers.routes.Assets.at("images/routeExample.png")" /></ul>
+        <li class="heading">Dynamic Routing</li>
+			<ul>
+			<li class="info">Routes can be passed parameters </li>
+			<li class="info">And they can also use regular expressions </li>
+			</ul>
+			<br />
+			<ul><img class="routes" src="@controllers.routes.Assets.at("images/dynamicroutes.png")" /></ul>
         </ul>
-	   <img class="routes" src="@controllers.routes.Assets.at("images/routeExample.png")" />
 	</div>
 	
 }

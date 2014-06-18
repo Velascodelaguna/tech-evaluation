@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="yes" ?>
 <PlayContent>
-	<Title> Cons </Title>
+	<Title> Disadvantages </Title>
 	<Heading name="Complex">  
 		<Info> Several built-in modules : Netty, Akka, Scala, SBT etc.  </Info> 
 	</Heading>
@@ -9,14 +9,18 @@
 		<Info> API is changing </Info>
 	</Heading>
 	<Heading name="Backward incompatibility between versions"> 
-		<Info> Play2.x has different features than Play1.x </Info>
+		<Info> Play 2.x has different features and syntax than Play 1.x </Info>
+		<Info> e.g. Groovy-based HTML templating replaced by Scala-based HTML templating </Info>
+		<Info> Will Playa stabilize over time? </Info>
 	</Heading>
 	<Heading name="Reliability on scala"> 
 		<Info> Uses LESS CSS and coffeescript  </Info>
-		<Info> Not used by traditional java applications </Info>
+		<Info> Not used by traditional Java applications </Info>
 	</Heading>
 	<Heading name="Difficulty in launching activator">
-		<Info> Missing dependencies </Info>
-		<Info> Set paths manually </Info>
+		<Info> Missing dependencies (e.g. JDK not included in package). </Info>
+		<Info> Paths and routes have to be set manually. </Info>
+		<Info> Requires Java environment paths/variables to be set in OS. </Info>
+		<Info> Annoyingly, closing Activator improperly leaves behind process lock file that one must deleted manually before re-launch. </Info>
 	</Heading>
 </PlayContent>

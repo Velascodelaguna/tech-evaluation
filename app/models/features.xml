@@ -3,12 +3,14 @@
 	<Title>Features</Title>
 	<Heading name="Scaffolding"> 
 		<Info> Has automatic code generation </Info>
-		<Info> Creates basic CRUD operations for databases </Info>
-		<Info> Little or no code work </Info>
+		<Info> Creates basic CRUD operations for your models </Info>
+		<Info> Little work is required </Info>
+		<Info> 1. Add "module.scaffold=${play.path}/modules/scaffold-head" to your conf/application.conf file </Info>
+		<Info> 2. Run "play scaffold:gen" to auto generate your views and controller to your defined models </Info>
 	</Heading>
 	<Heading name="Jobs">
-		<Info> Runs program logic in the background </Info>
-		<Info> Takes care of the timing and the lifecycles </Info>
+		<Info> Can run program logic in the background with Jobs </Info>
+		<Info> Play will take care of the timing and the lifecycles </Info>
 	</Heading>	
 	<Heading name="Templating">
 		<Info> Clean and intuitive way </Info>
