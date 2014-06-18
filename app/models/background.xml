@@ -17,7 +17,7 @@
 		<Info>Copyright notice, disclaimer from damages must be kept on works made with the license.</Info>
 		<Info>Used most prominently in Android base operating system.</Info>
 	</Heading>
-	<Heading name="As an aside, reactive apps embody four ideals:">
+	<Heading name="As an aside, reactive apps are said to be:">
 		<Info>Event-driven</Info>
 		<Info>Scalable</Info>
 		<Info>Resilient</Info>
