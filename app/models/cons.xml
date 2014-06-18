@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="yes" ?>
 <PlayContent>
-	<Title> Cons </Title>
+	<Title> Disadvantages </Title>
 	<Heading name="Complex">  
 		<Info> Several built-in modules : Netty, Akka, Scala, SBT etc.  </Info> 
 	</Heading>
