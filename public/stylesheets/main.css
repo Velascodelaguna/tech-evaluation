@@ -116,6 +116,7 @@ div.content
 	margin-left: 16em;
 	margin-top: 1em;
 	line-height: 1.8em;
+	background-size: 80%;
 }
 
 div.content li
@@ -137,6 +138,7 @@ div.content li.heading
 	color: #26370A;
 	font-style: bold;
 	font-size: 1.4em;
+	padding: 0.5em;
 }
 
 footer
