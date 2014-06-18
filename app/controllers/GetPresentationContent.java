@@ -36,11 +36,11 @@ public class GetPresentationContent {
         String title = null;
         
         try {
-
+            final String serverPath = "/home/group14/tech-evaluation/" + path;
             final Document doc = DocumentBuilderFactory
                     .newInstance()
                     .newDocumentBuilder()
-                    .parse(new File(path));
+                    .parse(new File(serverPath));
 
             XPath xpath = XPathFactory.newInstance().newXPath();
             
