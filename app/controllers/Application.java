@@ -56,42 +56,42 @@ public class Application extends Controller {
         final String filePath = "app/models/architecture.xml";
         Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
         
-        return ok( presentationpage.render("Architecture of Play", content) );
+        return ok( image.render("Architecture of Play", content) );
     }
     
     public static Result actions() {
         final String filePath = "app/models/architecture.xml";
         Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
         
-        return ok( presentationpage.render("Architecture of Play", content) );
+        return ok( image.render("Actions", content) );
     }
     
     public static Result views() {
         final String filePath = "app/models/architecture.xml";
         Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
         
-        return ok( presentationpage.render("Architecture of Play", content) );
+        return ok( image.render("Templating Language In Views", content) );
     }
     
     public static Result routes() {
         final String filePath = "app/models/architecture.xml";
         Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
         
-        return ok( presentationpage.render("Architecture of Play", content) );
+        return ok( image.render("Routes", content) );
     }
     
     public static Result dir() {
-        final String filePath = "app/models/architecture.xml";
+        final String filePath = "app/models/directory.xml";
         Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
         
-        return ok( presentationpage.render("Architecture of Play", content) );
+        return ok( image.render("Anatomy of Play", content) );
     }
     
     public static Result questions() {
         final String filePath = "app/models/architecture.xml";
         Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
         
-        return ok( presentationpage.render("Architecture of Play", content) );
+        return ok( image.render("Questions?", content) );
     }
 
 }

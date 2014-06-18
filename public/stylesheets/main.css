@@ -4,6 +4,8 @@ html, body
 	background-color: #88c557;
 }
 
+
+
 body header
 {
 	font-family: helvetica;
@@ -12,7 +14,7 @@ body header
 	color: #5ab1a7;
 	text-align: center;
 	font-style:italic;
-	padding-top: 0.2em;
+	padding-top: 0.1em;
 }
 
 h1
