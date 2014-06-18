@@ -16,8 +16,7 @@
     <div class="menu">
         <h2 id="menuTitle">Topics</h2>
         <ul id="menu">
-            @isActive() = { @Html(class="active") }
-            <li><a @(isActive when( request.path == routes.Application.index().toString()        )) href="@routes.Application.index()">Group 14</a></li>
+            <li><a class="@("active".when( request.path == routes.Application.index().toString()        ))" href="@routes.Application.index()">Group 14</a></li>
             <li><a class="@("active".when( request.path == routes.Application.about().toString()        ))" href="@routes.Application.about()">What is Play?</a></li>
             <li><a class="@("active".when( request.path == routes.Application.background().toString()   ))" href="@routes.Application.background()">Background</a></li>
             <li><a class="@("active".when( request.path == routes.Application.architecture().toString() ))" href="@routes.Application.architecture()">Play Architectures</a></li>
