@@ -111,12 +111,12 @@ ul#menu li.current
 
 div.content
 {
-	color: black;
 	background-color: #E1F7E4 /*#88c557*/;
 	margin-left: 16em;
 	margin-top: 1em;
 	line-height: 1.8em;
-	background-size: 80%;
+	width: 75%;
+	min-height: 500px;
 }
 
 div.content li
