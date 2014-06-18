@@ -7,26 +7,32 @@
 	</Heading>
 
 	<Heading name="Rapid iteration Support">
-		<Info>Make the changes</Info> 
+		<Info>Make changes</Info> 
 		<Info>Refresh the page</Info> 
 		<Info>See your changes instantly</Info> 
 	</Heading>
 
 	<Heading name="IDE and tooling support for Java and IntelliJ IDEA">
-		<Info>Compiles the Java and Scala sources directly</Info>
+		<Info>Compiles Java and Scala source directly</Info>
 		<Info>Uses JVM</Info> 
 	</Heading>
 
 	<Heading name="Reactive">
-		<Info>Used to create interactive and dynamic web applications</Info> 
-		<Info>Non blocking IO because nothing on the server is ever blocked</Info>
-		<Info>If the result depends on an extensive computation then only client will be blocked while waiting for the response</Info>
-		<Info>Server will return the promise of result</info>
+		<Info>Paradigm used to create interactive and dynamic web applications</Info> 
+		<Info>Play supports Non blocking IO and real-time web</Info>
+	</Heading>
+	<Heading name="Non blocking IO">
+		<Info>Nothing on the server is ever blocked</Info>
+		<Info>If the result depends on an extensive computation then only the requesting client will be blocked while waiting for the response</Info>
+		<Info>Server will return the promise of result</Info>
 		<Info>Play will serve this result as soon as the promise is redeemed</Info>
 	</Heading>
-
+	<Heading name="Real-time web">
+		<Info>Uses websockets instead of Comet sockets</Info>
+		<Info>Useful for web applications that require bi-directional communication</Info>
+    </Heading>
 	<Heading name="User Friendly Documentation">
-		<Info>Easy  </Info> 
+		<Info>Easy to read and understand for beginners</Info> 
 	</Heading>
 
 </PlayContent>
