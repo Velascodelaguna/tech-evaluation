@@ -6,7 +6,7 @@
     
 	<div class="content">
 	    @for((url, texts) <- textImageMap._2) {
-	    	<img class="content" src="@routes.Assets.at(url)" />
+	    	<img class="content" src="@controllers.routes.Assets.at(url)" />
 	    	<ul>
 	    	@for(text <- texts) {
 	    		<li>@text</li>

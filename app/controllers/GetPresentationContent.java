@@ -36,7 +36,8 @@ public class GetPresentationContent {
         String title = null;
         
         try {
-            final String serverPath = "/home/group14/tech-evaluation/" + path;
+//            final String serverPath = "/home/group14/tech-evaluation/" + path;
+            final String serverPath = path;
             final Document doc = DocumentBuilderFactory
                     .newInstance()
                     .newDocumentBuilder()
@@ -68,7 +69,6 @@ public class GetPresentationContent {
         }
 
         return new Tuple<String, Map<String, List<String>>>(title, content);
-
     }
 
     private static String getTextOnly(final String text) {

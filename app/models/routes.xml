@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="yes" ?>
+<PlayContent>
+<Title>Example of Routes</Title>
+	<Heading name="HTTP Routing">
+		<Info> Translates HTTP requests into actions</Info>
+		<Info> </Info>
+	</Heading>
+</PlayContent>

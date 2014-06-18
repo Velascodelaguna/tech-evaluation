@@ -50,7 +50,9 @@ public class Application extends Controller {
     
     public static Result actions() {
         final String filePath = "app/models/architecture.xml";
+        Tuple<String, Map<String, List<String>>> content = GetPresentationContent.getContent(filePath);
         return showImagePresentation(filePath);
+        
     }
     
     public static Result views() {
@@ -59,8 +61,9 @@ public class Application extends Controller {
     }
     
     public static Result routes() {
-        final String filePath = "app/models/architecture.xml";
-        return showImagePresentation(filePath);
+        final String filePath = "app/models/routes.xml";
+        Tuple<String, Map<String, List<String>>> content = GetPresentationContent.getContent(filePath);
+        return  ok( routespage.render() ) ;
     }
     
     public static Result dir() {
