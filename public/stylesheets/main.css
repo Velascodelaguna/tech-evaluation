@@ -122,27 +122,29 @@ div.content
 div.content li.Fname
 {
 	color: #26370A;
-	text-align: center;
+	text-align: left;
+	text-indent: 2em;
 	padding-right: 160px;
 	font-size: 1.5em;
 	padding-top: 1em;
 	background-image: url('../images/pinkIcon.png');
 	background-repeat: no-repeat;
-	background-position: 30%;
-	background-size: 40px 40px
+	background-position: 0% 100%;
+	background-size: 30px 30px;
 }
 
 div.content li.Mname
 {
 	color: #26370A;
-	text-align: center;
+	text-align: left;
+	text-indent: 2em;
 	padding-right: 160px;
 	font-size: 1.5em;
 	padding-top: 1em;
 	background-image: url('../images/greenIcon.png');
 	background-repeat: no-repeat;
-	background-position: 30%;
-	background-size: 40px 40px;
+	background-position: 0% 100%;
+	background-size: 30px 30px;
 }
 
 div.content li.info
