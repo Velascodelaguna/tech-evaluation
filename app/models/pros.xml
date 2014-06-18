@@ -5,17 +5,17 @@
 		<Info>Refresh the page and see changes without redeploying</Info> 
 	</Heading>
 	<Heading name="Implemented in Java and Scala">
-		<Info>Java performs as well as the JVM</Info>
+		<Info>Java performs well in the JVM</Info>
 		<Info>Java is a mature language with flushed out libraries</Info>
 		<Info>Java has IDE and tool support </Info>
 		<Info>Large active community</Info>		
-		<Info>Concurrency is easy with Scala since it is</Info>
+		<Info>Concurrency is easy: Minimize side effects, immutable and persistent data structures, Avoids mutable state, First class functions</Info>
 	</Heading>
 	<Heading name="Free and open source">
-		<Info>Available on Github</Info>
-		<Info>There is documentation</Info> <!-- What is your goal here? It's free so it has good documentation? -->
+		<Info>Play Framework is available on Github (https://github.com/playframework/playframework)</Info>
+		<Info>Lots of documentation: Tutorials, Play APIs, </Info> <!-- What is your goal here? It's free so it has good documentation? -->
 		<Info> user group </Info><!-- What do you mean? -->
-		<Info> open source plugins </Info>
+		<Info> Open source plugins/modules that extend Play's functionality for Security, Databases, Front-end development </Info>
 		<Info> StackOverflow </Info>
 	</Heading>
 	<Heading name="Reactive paradigm">
