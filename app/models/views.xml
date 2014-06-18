@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="yes" ?>
+<PlayContent>
+<Title>Example of Views </Title>
+	<Heading name="Scala Template">
+		<Info> Intermixes HTML and Scala </Info>
+		<Info> Uses the magic &quot@&quot symbol for Scala</Info>
+		<Info> Files have the extension &quotscala.html&quot</Info>
+</PlayContent>
