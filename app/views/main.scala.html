@@ -12,24 +12,25 @@
     <body> 
         <header><img src="@routes.Assets.at("images/playlogo.png")" width="264" height="90" /></header>
         
-        <div class="menu">
-            <h2 id="menuTitle">Topics</h2>
-    
-            <ul id="menu">
-                <li><a href="/">Group 14</a></li>
-                <li><a href="/tech-eval/about">What is Play?</a></li>
-                <li><a href="/tech-eval/background">Background</a></li>
-                <li><a href="/tech-eval/architecture">Play Architectures</a></li>
-                <li><a href="/tech-eval/features">Features</a></li>
-                <li><a href="/tech-eval/dir">Directory Structure</a></li>
-                <li><a href="/tech-eval/actions">Example of Action</a></li>
-                <li><a href="/tech-eval/views">Example of Views</a></li>
-                <li><a href="/tech-eval/routes">Example of Routes</a></li>
-                <li><a href="/tech-eval/pros">Advantages</a></li>
-                <li><a href="/tech-eval/cons">Disadvantages</a></li>
-                <li><a href="/tech-eval/qs">Questions</a></li>
-            </ul>
-        </div>
+
+    <div class="menu">
+        <h2 id="menuTitle">Topics</h2>
+        <ul id="menu">
+            <li><a class="@("active".when(request.path == controllers.routes.Application.index().toString()))"href="@routes.Application.index()">Group 14</a></li>
+            <li><a class="@("active".when(request.path == controllers.routes.Application.about().toString()))" href ="@routes.Application.about()">What is Play?</a></li>
+            <li><a class="@("active".when(request.path == controllers.routes.Application.background().toString()))" href ="@routes.Application.background()">Background</a></li>
+            <li><a class="@("active".when(request.path == controllers.routes.Application.architecture().toString()))" href ="@routes.Application.architecture()">Play Architectures</a></li>
+            <li><a class="@("active".when(request.path == controllers.routes.Application.features().toString()))" href ="@routes.Application.features()">Features</a></li>
+            <li><a class="@("active".when(request.path == controllers.routes.Application.dir().toString()))" href ="@routes.Application.dir()">Directory Structure</a></li>
+            <li><a class="@("active".when(request.path == controllers.routes.Application.actions().toString()))" href ="@routes.Application.actions()">Example of Action</a></li>
+            <li><a class="@("active".when(request.path == controllers.routes.Application.views().toString()))" href ="@routes.Application.views()">Example of Views</a></li>
+            <li><a class="@("active".when(request.path == controllers.routes.Application.routes().toString()))" href ="@routes.Application.routes()">Example of Routes</a></li>
+            <li><a class="@("active".when(request.path == controllers.routes.Application.pros().toString()))" href ="@routes.Application.pros()">Advantages</a></li>
+            <li><a class="@("active".when(request.path == controllers.routes.Application.cons().toString()))" href ="@routes.Application.cons()">Disadvantages</a></li>
+            <li><a class="@("active".when(request.path == controllers.routes.Application.questions().toString()))" href ="@routes.Application.questions()">Questions</a></li>
+        </ul>
+    </div>
+
         
         @content
     </body>

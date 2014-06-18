@@ -4,6 +4,8 @@ html, body
 	background-color: #88c557;
 }
 
+
+
 body header
 {
 	font-family: helvetica;
@@ -12,7 +14,7 @@ body header
 	color: #5ab1a7;
 	text-align: center;
 	font-style:italic;
-	padding-top: 0.2em;
+	padding-top: 0.1em;
 }
 
 h1
@@ -73,13 +75,14 @@ div.menu > ul > li a:link, div.menu > ul > li a:visited
 	color: #5E7830;
 }
 
+
 div.menu > ul > li a:hover
 {
 	color: #26370A;
 	background-position: 100% -32px;
 }
 
-div.menu > ul > li a:selected
+div.menu > ul > li a.active
 {
 	color: #26370A;
 	background-position: 100% -64px;
@@ -119,7 +122,33 @@ div.content
 	min-height: 500px;
 }
 
-div.content li
+div.content li.Fname
+{
+	color: #26370A;
+	text-align: center;
+	padding-right: 160px;
+	font-size: 1.5em;
+	padding-top: 1em;
+	background-image: url('../images/pinkIcon.png');
+	background-repeat: no-repeat;
+	background-position: 30%;
+	background-size: 40px 40px
+}
+
+div.content li.Mname
+{
+	color: #26370A;
+	text-align: center;
+	padding-right: 160px;
+	font-size: 1.5em;
+	padding-top: 1em;
+	background-image: url('../images/greenIcon.png');
+	background-repeat: no-repeat;
+	background-position: 30%;
+	background-size: 40px 40px;
+}
+
+div.content li.heading
 {
 	color: #26370A;
 }
