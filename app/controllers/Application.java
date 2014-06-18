@@ -64,7 +64,7 @@ public class Application extends Controller {
     public static Result views() {
         final String filePath = "app/models/architecture.xml";
         Tuple<String, Map<String, List<String>>> content = GetPresentationContent.getContent(filePath);
-        return  ok( views.render(content) ) ;
+        return  ok( viewspage.render(content) ) ;
     }
     
     public static Result routes() {
