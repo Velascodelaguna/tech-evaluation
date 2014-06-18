@@ -111,16 +111,60 @@ ul#menu li.current
 
 div.content
 {
-	color: black;
 	background-color: #E1F7E4 /*#88c557*/;
 	margin-left: 16em;
 	margin-top: 1em;
 	line-height: 1.8em;
+	width: 75%;
+	min-height: 500px;
 }
 
-div.content li
+div.content li.Fname
 {
 	color: #26370A;
+	text-align: center;
+	padding-right: 160px;
+	font-size: 1.5em;
+	padding-top: 1em;
+	background-image: url('../images/pinkIcon.png');
+	background-repeat: no-repeat;
+	background-position: 11em;
+	background-size: 40px 40px
+}
+
+div.content li.Mname
+{
+	color: #26370A;
+	text-align: center;
+	padding-right: 160px;
+	font-size: 1.5em;
+	padding-top: 1em;
+	background-image: url('../images/greenIcon.png');
+	background-repeat: no-repeat;
+	background-position: 11em;
+	background-size: 40px 40px;
+}
+
+div.content li.heading
+{
+	color: #26370A;
+}
+
+div.content li.info
+{
+	color: #26370A;
+	background-image: url('../images/favicon.png');
+	padding-left: 20px;
+	background-repeat: no-repeat;
+	background-position: 0 .5em;
+}
+
+div.content li.heading
+{
+	color: #26370A;
+	font-style: bold;
+	font-size: 1.4em;
+	padding: 0.5em;
 }
 
 footer

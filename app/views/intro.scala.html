@@ -9,7 +9,11 @@
     <div class="content">
     	<ul>
     	@for(name <- names) {
-        	<li>@name</li>
+            @if(name == "Allan" || name == "James" || name == "Rob") {
+        	   <li class="Mname">@name</li>
+            } else {
+                <li class="Fname">@name</li>
+            }
    		}
     	</ul>
     </div>
