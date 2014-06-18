@@ -35,8 +35,9 @@ public class Application extends Controller {
     
     public static Result activator()  {
         final String filePath = "app/models/activator.xml";
-        return showPresentation(filePath);
-    } 
+        Tuple<String, Map<String, List<String>>> content = GetPresentationContent.getContent(filePath);
+        return ok( activator.render(content) ) ;
+    }
 
     public static Result about()  {
         final String filePath = "app/models/whatisplay.xml";
