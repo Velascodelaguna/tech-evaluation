@@ -73,13 +73,14 @@ div.menu > ul > li a:link, div.menu > ul > li a:visited
 	color: #5E7830;
 }
 
+
 div.menu > ul > li a:hover
 {
 	color: #26370A;
 	background-position: 100% -32px;
 }
 
-div.menu > ul > li a:selected
+div.menu > ul > li a.active
 {
 	color: #26370A;
 	background-position: 100% -64px;
@@ -128,7 +129,7 @@ div.content li.Fname
 	padding-top: 1em;
 	background-image: url('../images/pinkIcon.png');
 	background-repeat: no-repeat;
-	background-position: 11em;
+	background-position: 30%;
 	background-size: 40px 40px
 }
 
@@ -141,7 +142,7 @@ div.content li.Mname
 	padding-top: 1em;
 	background-image: url('../images/greenIcon.png');
 	background-repeat: no-repeat;
-	background-position: 11em;
+	background-position: 30%;
 	background-size: 40px 40px;
 }
 
