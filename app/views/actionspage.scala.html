@@ -1,0 +1,21 @@
+@import play.libs.F.Tuple
+@(content: Tuple[String, Map[String, List[String]]])
+
+@main("Welcome"){
+    
+    <h1 id="title">@content._1</h1>
+    
+	<div class="content">
+	    <ul>
+		@for((heading, infos) <- content._2) {
+		    <li class="heading">@heading</li>
+		      <ul>
+		      @for(i <- infos) {
+		          <li class="info">@i</li> 
+		      }
+		      </ul>
+		}
+		</ul>
+		<img class="actions" src="@controllers.routes.Assets.at("images/controllersample.png")" />
+	</div>
+}
