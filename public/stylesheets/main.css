@@ -178,6 +178,11 @@ div.content > img.routes
 	margin-left: 5em;
 }
 
+div.content > img.activator
+{
+	width: 100%;
+}
+
 div.content > img.directory
 {
 	margin-left: 5em;
