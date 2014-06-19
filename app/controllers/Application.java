@@ -1,13 +1,14 @@
 package controllers;
 
+
 import play.mvc.*;
-import play.*;
 import views.html.*;
+import play.libs.F.Tuple;
 
-import java.util.*;
-
-
-
+import java.util.Map;
+import java.util.Collections;
+import java.util.List;
+import java.util.Arrays;
 
 public class Application extends Controller {
 
@@ -19,79 +20,78 @@ public class Application extends Controller {
 
     public static Result cons()  {
     	final String filePath = "app/models/cons.xml";
-    	Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
-    	    	
-    	return ok( presentationpage.render("Disadvantages of Play", content) );
+    	return showPresentation(filePath);
     }
     
     public static Result pros()  {
         final String filePath = "app/models/pros.xml";
-        Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
-                
-        return ok( presentationpage.render("Advantages of Play", content) );
+        return showPresentation(filePath);
     }    
     
     public static Result features()  {
         final String filePath = "app/models/features.xml";
-        Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
-                
-        return ok( presentationpage.render("Features of Play", content) );
+        return showPresentation(filePath);
     } 
     
+    public static Result activator()  {
+        final String filePath = "app/models/activator.xml";
+        Tuple<String, Map<String, List<String>>> content = GetPresentationContent.getContent(filePath);
+        return ok( activator.render(content) ) ;
+    }
+
     public static Result about()  {
         final String filePath = "app/models/whatisplay.xml";
-        Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
-                
-        return ok( presentationpage.render("What is Play?", content) );
+        return showPresentation(filePath);
     } 
     
     public static Result background()  {
         final String filePath = "app/models/background.xml";
-        Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
-                
-        return ok( presentationpage.render("Background Information", content) );
+        return showPresentation(filePath);
     } 
 
     public static Result architecture() {
         final String filePath = "app/models/architecture.xml";
-        Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
-        
-        return ok( presentationpage.render("Architecture of Play", content) );
+        return showImagePresentation(filePath);
     }
     
     public static Result actions() {
-        final String filePath = "app/models/architecture.xml";
-        Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
+        final String filePath = "app/models/actions.xml";
+        Tuple<String, Map<String, List<String>>> content = GetPresentationContent.getContent(filePath);
+        return ok( actionspage.render(content) ) ;
         
-        return ok( presentationpage.render("Architecture of Play", content) );
     }
     
     public static Result views() {
-        final String filePath = "app/models/architecture.xml";
-        Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
-        
-        return ok( presentationpage.render("Architecture of Play", content) );
+        final String filePath = "app/models/views.xml";
+        return showPresentation(filePath);
     }
     
     public static Result routes() {
-        final String filePath = "app/models/architecture.xml";
-        Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
-        
-        return ok( presentationpage.render("Architecture of Play", content) );
+        final String filePath = "app/models/routes.xml";
+        Tuple<String, Map<String, List<String>>> content = GetPresentationContent.getContent(filePath);
+        return  ok( routespage.render(content) ) ;
     }
     
     public static Result dir() {
-        final String filePath = "app/models/architecture.xml";
-        Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
-        
-        return ok( presentationpage.render("Architecture of Play", content) );
+        final String filePath = "app/models/directory.xml";
+        Tuple<String, Map<String, List<String>>> content = GetPresentationContent.getContent(filePath);
+        return ok( directorypage.render(content) ) ;
+    }
+
+    public static Result questions() {
+        return ok ( questions.render() );
     }
     
-    public static Result questions() {
-        final String filePath = "app/models/architecture.xml";
-        Map<String, List<String>> content = GetPresentationContent.getContent(filePath);
-        
-        return ok( presentationpage.render("Architecture of Play", content) );
+    private static Result showPresentation(final String filePath) {
+        Tuple<String, Map<String, List<String>>> content = GetPresentationContent.getContent(filePath);
+        return ok ( presentationpage.render( content ) );
     }
+    
+    private static Result showImagePresentation(final String filePath) {
+        Tuple<String, Map<String, List<String>>> content = GetPresentationContent.getContent(filePath);
+        return ok ( image.render( content ) );
+    }
+    
+
 
 }

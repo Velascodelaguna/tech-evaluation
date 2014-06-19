@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes" ?>
+<PlayContent>
+<Title>Example of Routes</Title>
+	<Heading name="HTTP Routing">
+		<Info> Translates HTTP requests into actions</Info>
+		<Info> Play identifies the type of request </Info>
+		<Info> Calls an appropriate action located in a controller</Info>
+	</Heading>
+</PlayContent>

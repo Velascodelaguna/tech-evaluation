@@ -1,0 +1,17 @@
+@import play.libs.F.Tuple
+@(textImageMap: Tuple[String, Map[String, List[String]]])
+
+@main("Welcome"){
+    <h1 id="title">@textImageMap._1</h1>
+    
+	<div class="content">
+	    @for((url, texts) <- textImageMap._2) {
+	    	<img class="content" src="@controllers.routes.Assets.at(url)" />
+	    	<ul>
+	    	@for(text <- texts) {
+	    		<li>@text</li>
+	    	}
+	    	</ul>
+		}
+	</div>
+}
