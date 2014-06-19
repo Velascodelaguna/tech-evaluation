@@ -193,6 +193,12 @@ div.content > img.question
 	margin-left: 12em;
 	margin-top: 3em;
 }
+
+div.content > img.actions
+{
+	
+	margin-top: 3em;
+}
 footer
 {
 	background-color:white;
