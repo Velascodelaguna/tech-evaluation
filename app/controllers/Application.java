@@ -63,8 +63,7 @@ public class Application extends Controller {
     
     public static Result views() {
         final String filePath = "app/models/views.xml";
-        Tuple<String, Map<String, List<String>>> content = GetPresentationContent.getContent(filePath);
-        return  ok( viewspage.render(content) ) ;
+        return showPresentation(filePath);
     }
     
     public static Result routes() {
