@@ -77,6 +77,13 @@ public class Application extends Controller {
         Tuple<String, Map<String, List<String>>> content = GetPresentationContent.getContent(filePath);
         return ok( directorypage.render(content) ) ;
     }
+    
+    public static Result comparison() {
+        final String filePath = "app/models/FrameworkComparison.xml";
+        Tuple<String, Map<String, List<String>>> content = GetPresentationContent.getContent(filePath);
+        return ok( comparisonpage.render(content) );
+        
+    }
 
     public static Result questions() {
         return ok ( questions.render() );
