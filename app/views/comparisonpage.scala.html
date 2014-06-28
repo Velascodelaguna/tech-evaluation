@@ -2,7 +2,13 @@
 @(content: Tuple[String, Map[String, List[String]]])
 
 @main("Welcome"){
-    
+    <style>
+        div.content li
+        {
+          margin-right: 5em;
+        }
+    </style>
+
     <h1 id="title">@content._1</h1>
     
     <div class="content">
