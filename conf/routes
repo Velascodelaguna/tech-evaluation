@@ -16,6 +16,7 @@ GET     /tech-eval/routes           controllers.Application.routes()
 GET     /tech-eval/cons             controllers.Application.cons()
 GET     /tech-eval/pros             controllers.Application.pros()
 GET     /tech-eval/background       controllers.Application.background()
+GET     /tech-eval/comparison       controllers.Application.comparison()
 GET		/tech-eval/qs               controllers.Application.questions()
 
 # Map static resources from the /public folder to the /assets URL path
