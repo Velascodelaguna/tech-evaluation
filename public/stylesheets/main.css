@@ -4,88 +4,94 @@ html, body
 	background-color: #88c557;
 }
 
+
+
 body header
 {
-	font-family: helvetica;
-	font-size: 4em;
 	background-color: white;
-	color: green;
 	text-align: center;
-	font-style:italic;
-	padding-top: 0.3em;
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
 }
 
 h1
 {
 	text-align:center;
-	background-color: white;
-	color: green;
+	background-color:  #88c557;
+	color: #154F38;
 	margin:0;
-	padding:0.5em;
+	padding-top: 0.5em;
+	padding-bottom: 0.2em;
 	font-size:2.5em;
+}
+
+h2#menuTitle
+{
+	color: #26370A;
 }
 
 
 
 div.menu
 {
+	width: 180px; /*width of menu*/
+	border-style: solid solid none solid;
+	border-color: #88c557;
+	border-size: 1px;
+	border-width: 1px;
+	position: absolute;
+	top: 9.6em;
 	float:left;
-	display:block;
-	background-color:#88c557;
 	padding:1em;
 	padding-right:0;
-	padding-left:2.3em;
+	padding-left:2em;
 	margin-right: 1em;
-	height:100%;
-	display:table-column;
 }
 
 div.menu > ul
 {
-	display: block;
-	list-style-image: none;
-	margin:0;
-	padding:0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
-div.menu > ul > li
-{
-	margin:0;
-}
 
 div.menu > ul > li a
 {
-	display:block;
-	padding-right:2em;
-	background-color:green;
-	border: 0.15em solid #88c557;
-	padding-left:0.7em;
-	text-decoration:none;
-	font-size:1.2em;
-	color:white;
+	font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+	display: block;
+	background: transparent url('../images/arrowgreen.gif') 100% 0;
+	height: 24px; /*Set to height of bg image- padding within link (ie: 32px - 4px - 4px)*/
+	padding: 4px 0 4px 10px;
+	line-height: 24px; /*Set line-height of bg image- padding within link (ie: 32px - 4px - 4px)*/
+	text-decoration: none;
 }
 
-div.menu > ul > li a:link
+div.menu > ul > li a:link, div.menu > ul > li a:visited
 {
-	color:white;
+	color: #5E7830;
 }
 
-
-div.menu > ul > li a:visited
-{
-	color:white;
-	background-color: #88c557;
-}
 
 div.menu > ul > li a:hover
 {
-	color:black;
+	color: #26370A;
+	background-position: 100% -32px;
+}
+
+div.menu > ul > li a.active
+{
+	color: #26370A;
+	background-position: 100% -64px;
 }
 
 div.menu > h2
 {
 	padding:0;
+	padding-bottom: 8px;
 	margin:0;
+	margin-top: -0.5em;
+	margin-bottom: 0.5em;
 	color:white;
 	text-align: left;
 	font-size:2em;
@@ -105,12 +111,94 @@ ul#menu li.current
 
 div.content
 {
-	color: black;
-	background-color: white;
-	line-height: 2em;
+	background-color: #E1F7E4 /*#88c557*/;
 	margin-left: 16em;
+	margin-top: 1em;
+	line-height: 1.8em;
+	width: 75%;
+	min-height: 50em;
 }
 
+div.content li.Fname
+{
+	color: #26370A;
+	text-align: left;
+	text-indent: 2em;
+	padding-right: 160px;
+	font-size: 1.5em;
+	padding-top: 1em;
+	background-image: url('../images/pinkIcon.png');
+	background-repeat: no-repeat;
+	background-position: 0% 100%;
+	background-size: 30px 30px;
+}
+
+div.content li.Mname
+{
+	color: #26370A;
+	text-align: left;
+	text-indent: 2em;
+	padding-right: 160px;
+	font-size: 1.5em;
+	padding-top: 1em;
+	background-image: url('../images/greenIcon.png');
+	background-repeat: no-repeat;
+	background-position: 0% 100%;
+	background-size: 30px 30px;
+}
+
+div.content li.info
+{
+	color: #26370A;
+	background-image: url('../images/favicon.png');
+	padding-left: 20px;
+	background-repeat: no-repeat;
+	background-position: 0 .5em;
+}
+
+div.content li.picinfo
+{
+	color: #26370A;
+	background-image: url('../images/favicon.png');
+	padding-left: 20px;
+	background-repeat: no-repeat;
+	background-position: 0 .5em;
+}
+
+div.content li.heading
+{
+	color: #26370A;
+	font-style: bold;
+	font-size: 1.4em;
+	padding: 0.5em;
+}
+
+div.content > img.routes
+{
+	margin-left: 5em;
+}
+
+div.content > img.activator
+{
+	width: 100%;
+}
+
+div.content > img.directory
+{
+	margin-left: 5em;
+}
+
+div.content > img.question
+{
+	margin-left: 12em;
+	margin-top: 3em;
+}
+
+div.content > img.actions
+{
+	
+	margin-top: 3em;
+}
 footer
 {
 	background-color:white;

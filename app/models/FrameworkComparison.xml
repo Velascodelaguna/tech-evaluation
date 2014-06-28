@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes" ?>
+<PlayContent>
+<Title> Framework Comparisons</Title>
+	<Heading name="Django vs. Play">
+		<Info> Django and Play are web frameworks that use Python and Java as their programming languages respectively[1]. Both of them use Model-View-Controller architecture[1]. Django is fairly old framework as compared to Play since it was created in 2003 whereas play was created in 2007[1]. Both of them are cross-platform compatible and are open source but under different licenses since Django is under BCD licence while play is under Apache License 2[1]. These two web frameworks come with selenium test framework integrated within, which makes the testing process really easy because the browser is used to run the tests[2]. The environment installation for Django on windows is not an easy process which includes: Python, Django, WAMP and  Aptana Studio (IDE) as compared to play environment installation on windows which includes: JDK, Play, Eclipse and Config[3]. Both of these frameworks have good documentations available to guide the users through the installation steps and other discussion communities such as stackoverflow to help answer the development problems one faces through while working with these web frameworks[3]. Thus, these two have pretty similar features and the choice of framework entirely depends on the programming language you are comfortable coding in.
+		</Info>
+	</Heading>
+	<Heading name="References">
+		<Info> [1] Florian Heinze (2008). Play Framework vs. Django [Online]. Available: http://vschart.com/compare/play-framework/vs/django-framework </Info>
+		<Info> [2] Matt Cottingham (2012, Jan 31). A Django Developer’s First Experience of Play [Online]. Available: http://blueprintforge.com/blog/2012/01/31/a-django-developers-first-experience-of-play/ </Info>
+		<Info> [3] Diogo Nunes (2014, May 26). Rails vs. Django vs. Play : Battle of frameworks [Online]. Available: http://www.diogonunes.com/blog/rails-vs-django-vs-play-frameworks/ </Info>
+	</Heading>
+	
+</PlayContent>
